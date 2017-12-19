@@ -8,9 +8,9 @@ public class CSVOperatorTest2 {
 
     @Test
     public void testImportCSVString() {
-        List<List<String>> allData = CSVOperator.importCSV("csvTestFile.csv");
-        if (allData != null && !allData.isEmpty()) {
-            for (List<String> rowData : allData) {
+        List<List<String>> allTestData = CSVOperator.importCSV("csvTestFile.csv");
+        if (allTestData != null && !allTestData.isEmpty()) {
+            for (List<String> rowData : allTestData) {
                 System.out.println(String.join(",", rowData));
             }
         }

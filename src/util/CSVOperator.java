@@ -15,7 +15,7 @@ public class CSVOperator {
     //This class is used to manipulate on a csv file(read/write)
     public static boolean exportCSV(File file, List<List<String>> allData) {
         //This method is used to put the data into the file
-        boolean isSucess = false;
+        boolean isSuccess = false;
 
         FileOutputStream out = null;
         OutputStreamWriter osw = null;
@@ -29,9 +29,9 @@ public class CSVOperator {
                     bw.append(String.join(",", rowData)).append("\r");
                 }
             }
-            isSucess = true;
+            isSuccess = true;
         } catch (Exception e) {
-            isSucess = false;
+            isSuccess = false;
         } finally {
             if (bw != null) {
                 try {
@@ -59,7 +59,7 @@ public class CSVOperator {
             }
         }
 
-        return isSucess;
+        return isSuccess;
     }
 
     public static boolean exportCSV(String filePath, List<List<String>> allData) {

@@ -17,14 +17,13 @@ public class Table extends AbstractTableModel {
     /**
      *
      */
-    private static final long serialVersionUID = 141896957889042146L;
+    private static final long serialVersionUID = 144896357789022156L;
     public ArrayList<Train> trainList = new ArrayList<Train>();
     public ArrayList<Driver> driverList = new ArrayList<Driver>();
 
     public String filePath = null;
     public List<String> headers = null;
     public List<List<String>> allData = null;    //Two dimensional list represent all data in a table
-    public Database database = null;
 
     public Table(String filePath, String... headers) {        //Constructor for the Table class
         this.filePath = filePath;    //The location where store the table
